@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-APPLICATION-JS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- hidden container/nextpage container -->
+
+<!-- <div class="nextpage" id="nextpage-hidden">
+        <div  id="nextpage-hidden">
+            <div class="nextpage">
+                <div cl>
+                 <span onclick="backbtn()" class="back-btn-icon"><i class="fa-solid fa-circle-arrow-left"></i> Back</span>
+                </div>
+                 <span class="cardname">${para.innerText}</span>
+                <div>
+                <span onclick="popupbox_blur()"><i  class="fa-solid fa-circle-plus" id="padd"></i></span>
+                </div>
+            </div>
+
+                 <hr />
+                <div class="hidebox">
+                    <div>
+                      ${para.parentElement.innerHTML}
+                     </div>
+                </div>
+        </div>
+    </div> -->
+
+<!-- mainpage header -->
+
+    <div id="header">
+        <div><span class="text"><b>TASK</b> LISTS</span></div>
+        <div class="icon-div"><span  onclick="popupbox_blur()" class="icon"><i class="fa-solid fa-circle-plus"></i> <b>Add</b></span></div>
+        
+    </div>
+    <hr id="hr-tag">
+    <div id="notask">
+         <p>No items in todo list</p>
+    </div>
+
+<!-- mainpage container -->
+
+        <div class="main-container" id="main-id">
+            <!-- <div  id=${itm_c} class="boxes">
+                <span class="box-heading" id="inid" onclick="nextpage_hidden(this)" >${inputtext}</span>
+                <hr>
+                <ol class="list-name" id="name-id${itm_c}"></ol>
+                <i class="fa-solid fa-circle-plus del" id="add-btn${itm_c++}" onclick="popupbox_blur2(); eachboxtask(event)"></i>
+                <i class="fa-solid fa-trash-can" onclick="remove_box(this)"></i>
+              </div> -->
+        </div>
+        
+
+<!-- pop1 -->
+        <!-- <div class="pop1" id="popupid">
+               <h1 id="tasktag">Add New List</h1>
+                <div><input id="input" class="input-class" type="text" placeholder="Enter List..."></div>
+                 <div id="btns">
+                   <div><button onclick="addtask()" id="addbtn">Add</button></div>
+                   <div><button onclick="remove_pop()" id="cancelbtn">Cancel</button></div>
+                </div>
+        </div>
+
+        
+        
+        <div class="newpop">
+            <div class="newpopbox2">
+                <h1 id="new-h1">Add New Item</h1>
+                <div><input id="newinput" class="newinput-class" type="text" placeholder="Enter Item..."></div>
+                <div id="newbtns">
+                    <div><button id="newaddbtn">Add</button></div>
+                    <div><button id="newcanbtn" >cancel</button></div>
+                </div>
+
+            </div>
+
+        </div> -->
+
+<!-- pop2 -->
+
+        <!-- <div class="pop2" id="pop2">
+               <h1 id="tasktag">Add New Item</h1>
+                <div><input id="input_item" class="input-class" type="text" placeholder="Enter Item.."></div>
+                    <div id="btns">
+                        <div><button onclick="addnew_taskname()" id="addbtn">Add</button></div>
+                        <div><button onclick="close_box()" id="cancelbtn">Close</button></div>
+                     </div>
+        </div> -->
+
+    
+    <script src="./main.js"></script>
+</body>
+</html>

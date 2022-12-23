@@ -1,0 +1,379 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(35, 18, 18);
+}
+#header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+   
+    
+    
+}
+.text{
+    font-size: 3rem;
+    color: deepskyblue;
+}
+.icon-div{
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    font-size: 3rem;
+    color: deepskyblue;
+    cursor: pointer;
+}
+.icon-div i{
+    font-size: 2rem;
+}
+#notask{
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(35, 18, 18);
+    color: white;
+    
+
+}
+#tasktag{
+    color: red;
+    font-size: 2rem;
+}
+#input{
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+#btns{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+#addbtn{
+    height: 35px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#addbtn:hover{
+    background-color: rgb(2, 133, 2);
+    outline: red;
+}
+.fa-circle-plus:hover{
+    color: rgb(47, 255, 106);
+    transform: scale(1.2);
+}
+#cancelbtn{
+    height: 35px;
+    width: 100px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#cancelbtn:hover{
+    background-color: deepskyblue;
+}
+.new-div{
+    
+        width: 30%;
+        height: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    
+}
+.main-container{
+width: 90%;
+height: 100vh;
+background-color: rgb(35, 18, 18);
+display: flex;
+margin: auto;
+justify-content: space-between;
+flex-wrap: wrap;
+
+
+}
+.boxes{
+    margin: 20px;
+    width: 280px;
+    height: 350px;
+    
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid red;
+    text-align: center;
+    box-sizing: border-box;
+}
+.box-heading{
+    color: red;
+    font-size: 2rem;
+    padding: 5px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.del{
+    font-size: 1.8rem;
+    display: flex;
+    /* float: right; */
+    position: relative;
+    top: 180px;
+    left: 80px;
+    color: rgb(16, 168, 10);
+    cursor: pointer;
+    margin-left: 90px;
+    
+}
+.del:hover{
+    color: deepskyblue;
+    transform: scale(1.2);
+}
+.fa-trash-can{
+    font-size: 1.8rem;
+    display: flex;
+    /* float: right; */
+    position: relative;
+    top: 180px;
+    cursor: pointer;
+    color: red;
+    margin-left: 90px;
+}
+.fa-trash-can:hover{
+    color: rgb(117, 5, 100);
+    transform: scale(.8);
+}
+#input_item{
+    height: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1.3rem; 
+}
+.list-name{
+    list-style-type: none;
+    font-size: 20px;
+   
+    
+}
+.mark-btn{
+height: 20px;
+width: 75px;
+border: 2px solid rgb(37, 108, 8);
+background-color: rgb(66, 150, 178);
+border-radius: 15px;
+color: rgb(0, 0, 0);
+outline: none;
+cursor: pointer;
+
+
+}
+.mark-btn:hover{
+    border: 2px solid rgb(244, 38, 15);
+    background-color: rgb(65, 107, 6);
+    color: rgb(238, 238, 238);
+    transform: scale(.8);
+
+}
+
+.task_n{
+    text-decoration: line-through red;
+    font-weight: bold;
+    color: rgb(4, 100, 35);
+    
+}
+.m_btn{
+    display: none;
+}
+
+.newpage{
+    width: 100%;
+height: 100vh;
+background-color: rgb(35, 18, 18);
+display: flex;
+margin: auto;
+justify-content: space-between;
+flex-wrap: wrap;
+
+   
+}
+.hidebox{
+
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 20px;
+    width: 280px;
+    height: 350px;
+    
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid red;
+    text-align: center;
+    box-sizing: border-box;
+}
+.nextpage{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.back-btn-icon{
+    font-size: 2rem;
+    color: deepskyblue;
+    cursor: pointer;
+}
+.back-btn-icon:hover{
+    color: yellow;
+    transform: scale(1.2);
+}
+.cardname{
+    color: white;
+    font-size: 2rem;
+}
+#padd{
+    font-size: 2rem;
+    font-weight: bold;
+    color: deepskyblue;
+    cursor: pointer; 
+}
+#padd:hover{
+    color: rgb(47, 255, 106);
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 430px) and (min-width: 200px) {
+    .text{
+        font-size: 2rem;
+        color: deepskyblue;
+    }
+    .icon-div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .icon{
+        font-size: 2rem;
+        color: deepskyblue;
+        cursor: pointer;
+    }
+    .icon-div i{
+        font-size: 1.5rem;
+    }
+    #notask{
+        text-align: center;
+        font-size: 2rem;
+        background-color: rgb(35, 18, 18);
+        color: white;
+    
+    }
+    .back-btn-icon{
+        font-size: 1.5rem;
+        color: deepskyblue;
+        cursor: pointer;
+    }
+    .cardname{
+        color: white;
+        font-size: 1.5rem;
+    }
+    #padd{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: deepskyblue;
+        cursor: pointer; 
+    }
+    .del{
+        font-size: 1.8rem;
+        display: flex;
+        /* float: right; */
+        position: relative;
+        top: 180px;
+        left: 0px;
+        color: rgb(16, 168, 10);
+        cursor: pointer;
+        
+        
+    }
+    .fa-trash-can{
+        font-size: 1.8rem;
+        display: flex;
+        /* float: right; */
+        position: relative;
+        top: 185px;
+        left: 0px;
+        cursor: pointer;
+        color: red;
+       
+    }
+    #btns{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 40px;
+    }
+    #addbtn{
+        height: 25px;
+        width: 40px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    #cancelbtn{
+        height: 25px;
+        width: 40px;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .new-div{
+    
+        width: 30%;
+        height: 250px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 15px;
+        border: 2px solid red;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    
+}
+#tasktag{
+    color: red;
+    font-size: 1.3rem;
+}
+}
