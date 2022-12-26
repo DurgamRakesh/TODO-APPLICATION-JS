@@ -119,6 +119,8 @@ flex-wrap: wrap;
     margin: 20px;
     width: 280px;
     height: 350px;
+    overflow-y: scroll;
+    scroll-behavior: inherit;
     
     background-color: white;
     border-radius: 15px;
@@ -137,12 +139,12 @@ flex-wrap: wrap;
     font-size: 1.8rem;
     display: flex;
     /* float: right; */
-    position: relative;
-    top: 180px;
-    left: 80px;
+    position: sticky;
+    top: 80%;
+    /* left: 300px; */
     color: rgb(16, 168, 10);
     cursor: pointer;
-    margin-left: 90px;
+    /* margin-left: 150px; */
     
 }
 .del:hover{
@@ -150,14 +152,14 @@ flex-wrap: wrap;
     transform: scale(1.2);
 }
 .fa-trash-can{
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     display: flex;
     /* float: right; */
-    position: relative;
-    top: 180px;
+    position: sticky;
+    top: 80%;
     cursor: pointer;
     color: red;
-    margin-left: 90px;
+    /* margin-left: 90px; */
 }
 .fa-trash-can:hover{
     color: rgb(117, 5, 100);
@@ -221,13 +223,14 @@ flex-wrap: wrap;
 .hidebox{
 
     display: flex;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     margin: 20px;
-    width: 280px;
-    height: 350px;
+    width: 18vw;
+    height: 45vh;
     
     background-color: white;
     border-radius: 15px;
@@ -266,9 +269,9 @@ flex-wrap: wrap;
     transform: scale(1.2);
 }
 
-@media only screen and (max-width: 430px) and (min-width: 200px) {
+@media only screen and (max-width: 500px) {
     .text{
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: deepskyblue;
     }
     .icon-div{
@@ -276,7 +279,7 @@ flex-wrap: wrap;
         justify-content: space-around;
     }
     .icon{
-        font-size: 2rem;
+        font-size: 1.6rem;
         color: deepskyblue;
         cursor: pointer;
     }
@@ -309,8 +312,8 @@ flex-wrap: wrap;
         font-size: 1.8rem;
         display: flex;
         /* float: right; */
-        position: relative;
-        top: 180px;
+        position: sticky;
+        top: 80%;
         left: 0px;
         color: rgb(16, 168, 10);
         cursor: pointer;
@@ -321,8 +324,8 @@ flex-wrap: wrap;
         font-size: 1.8rem;
         display: flex;
         /* float: right; */
-        position: relative;
-        top: 185px;
+        position: sticky;
+        top: 80%;
         left: 0px;
         cursor: pointer;
         color: red;
@@ -331,33 +334,33 @@ flex-wrap: wrap;
     #btns{
         display: flex;
         justify-content: space-evenly;
-        margin-top: 40px;
+        margin-top: 10px;
     }
     #addbtn{
         height: 25px;
-        width: 40px;
+        width: 50px;
         background-color: red;
         color: white;
         border-radius: 5px;
         border: none;
-        font-size: 1rem;
+        font-size: .8rem;
         cursor: pointer;
     }
 
     #cancelbtn{
         height: 25px;
-        width: 40px;
+        width: 50px;
         background-color: red;
         color: white;
         border-radius: 5px;
         border: none;
-        font-size: 1rem;
+        font-size: .8rem;
         cursor: pointer;
     }
     .new-div{
     
-        width: 30%;
-        height: 250px;
+        width: 80%;
+        height: 150px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -375,5 +378,13 @@ flex-wrap: wrap;
 #tasktag{
     color: red;
     font-size: 1.3rem;
+}
+#input{
+    height: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
 }
 }
