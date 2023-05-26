@@ -88,8 +88,8 @@ body{
 }
 .new-div{
     
-        width: 30%;
-        height: 250px;
+        width: 40%;
+        height: 280px;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -127,6 +127,9 @@ flex-wrap: wrap;
     border: 2px solid red;
     text-align: center;
     box-sizing: border-box;
+}
+.boxes::-webkit-scrollbar-thumb{
+    display: none;
 }
 .box-heading{
     color: red;
@@ -229,7 +232,7 @@ flex-wrap: wrap;
     left: 50%;
     transform: translate(-50%,-50%);
     margin: 20px;
-    width: 18vw;
+    width: 25vw;
     height: 45vh;
     
     background-color: white;
@@ -386,5 +389,23 @@ flex-wrap: wrap;
     border-radius: 10px;
     margin-top: 10px;
     font-size: 1rem;
+}
+.hidebox{
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 20px;
+    width: 50vw;
+    height: 45vh;
+    
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid red;
+    text-align: center;
+    box-sizing: border-box;
 }
 }
